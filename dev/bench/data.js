@@ -1,6 +1,6 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1619191699806,
-  "repoUrl": "https://github.com/tokio-rs/tokio",
+  "lastUpdate": 1620854203139,
+  "repoUrl": "https://github.com/aym-v/tokio",
   "entries": {
     "sync_rwlock": [
       {
@@ -13823,6 +13823,60 @@ window.BENCHMARK_DATA = {
             "name": "read_uncontended",
             "value": 470,
             "range": "± 74",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "valaymerick@gmail.com",
+            "name": "Aymerick Valette",
+            "username": "aym-v"
+          },
+          "committer": {
+            "email": "valaymerick@gmail.com",
+            "name": "Aymerick Valette",
+            "username": "aym-v"
+          },
+          "distinct": false,
+          "id": "db3daa3864badff651d3b7c8c99672705bc5bdc7",
+          "message": "fix a test typo",
+          "timestamp": "2021-05-11T15:50:59Z",
+          "tree_id": "f260714ae01e0c48e6211e1f9a6617149af31056",
+          "url": "https://github.com/aym-v/tokio/commit/db3daa3864badff651d3b7c8c99672705bc5bdc7"
+        },
+        "date": 1620854199381,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 838,
+            "range": "± 102",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 14233,
+            "range": "± 5564",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 843,
+            "range": "± 98",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 13459,
+            "range": "± 2441",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 546,
+            "range": "± 75",
             "unit": "ns/iter"
           }
         ]
