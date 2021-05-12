@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1620854206734,
+  "lastUpdate": 1620854211037,
   "repoUrl": "https://github.com/aym-v/tokio",
   "entries": {
     "sync_rwlock": [
@@ -40143,6 +40143,60 @@ window.BENCHMARK_DATA = {
             "name": "uncontended_concurrent_single",
             "value": 1256,
             "range": "± 126",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "valaymerick@gmail.com",
+            "name": "Aymerick Valette",
+            "username": "aym-v"
+          },
+          "committer": {
+            "email": "valaymerick@gmail.com",
+            "name": "Aymerick Valette",
+            "username": "aym-v"
+          },
+          "distinct": false,
+          "id": "db3daa3864badff651d3b7c8c99672705bc5bdc7",
+          "message": "fix a test typo",
+          "timestamp": "2021-05-11T15:50:59Z",
+          "tree_id": "f260714ae01e0c48e6211e1f9a6617149af31056",
+          "url": "https://github.com/aym-v/tokio/commit/db3daa3864badff651d3b7c8c99672705bc5bdc7"
+        },
+        "date": 1620854203998,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contended_concurrent_multi",
+            "value": 14722,
+            "range": "± 4228",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contended_concurrent_single",
+            "value": 1007,
+            "range": "± 118",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended",
+            "value": 657,
+            "range": "± 67",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_multi",
+            "value": 14939,
+            "range": "± 5316",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_single",
+            "value": 999,
+            "range": "± 77",
             "unit": "ns/iter"
           }
         ]
