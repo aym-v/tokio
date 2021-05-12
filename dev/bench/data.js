@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1620854203139,
+  "lastUpdate": 1620854206734,
   "repoUrl": "https://github.com/aym-v/tokio",
   "entries": {
     "sync_rwlock": [
@@ -26215,6 +26215,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 21640401,
             "range": "± 3580865",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "valaymerick@gmail.com",
+            "name": "Aymerick Valette",
+            "username": "aym-v"
+          },
+          "committer": {
+            "email": "valaymerick@gmail.com",
+            "name": "Aymerick Valette",
+            "username": "aym-v"
+          },
+          "distinct": false,
+          "id": "db3daa3864badff651d3b7c8c99672705bc5bdc7",
+          "message": "fix a test typo",
+          "timestamp": "2021-05-11T15:50:59Z",
+          "tree_id": "f260714ae01e0c48e6211e1f9a6617149af31056",
+          "url": "https://github.com/aym-v/tokio/commit/db3daa3864badff651d3b7c8c99672705bc5bdc7"
+        },
+        "date": 1620854202895,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 172904,
+            "range": "± 48121",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 618940,
+            "range": "± 159928",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4360233,
+            "range": "± 1183387",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 17894723,
+            "range": "± 3946839",
             "unit": "ns/iter"
           }
         ]
