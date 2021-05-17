@@ -393,6 +393,18 @@ impl Semaphore {
 
         Pending
     }
+
+    /// Shrinks the number of available permits by the indicated reduction.
+    ///
+    /// This differs from `acquire` in that it does not block waiting for permits
+    /// to become available.
+    pub(crate) fn reduce_permits(&self, reduction: usize) {
+        self.permits
+            .fetch_update(Relaxed, Relaxed, |v| {
+                v.saturating_sub(reduction << Self::PERMIT_SHIFT).into()
+            })
+            .unwrap();
+    }
 }
 
 impl fmt::Debug for Semaphore {
